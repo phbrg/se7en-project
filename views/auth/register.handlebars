@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/style/login.css">
+<title>Arkadius register</title>
+
+<form action="/auth/register" method="POST">
+  <h1>Create an account</h1>
+  <fieldset>
+    <legend>Username</legend>
+    <input type="text" name="name" value="{{this.username}}" placeholder="Username">
+  </fieldset>
+  <fieldset>
+    <legend>Email</legend>
+    <input type="email" name="email" placeholder="Email">
+  </fieldset>
+  <fieldset>
+    <legend>Password</legend>
+    <input type="password" name="password" placeholder="Password">
+  </fieldset>
+  <fieldset>
+    <legend>Confirm Password</legend>
+    <input type="password" name="confirmpassword" placeholder="Password">
+  </fieldset>
+  <button>Register</button>
+</form>
+<p>Dont have an account? <a href="/auth/register">Register Here</a></p>
