@@ -1,0 +1,21 @@
+<title>se7en dashboard</title>
+<h1 class="title">Dashboard</h1>
+<a class="btn" href="/posts/add">Make a new post</a>
+<h1 class="title">Your posts</h1>
+<ul class="post-dash">
+  {{#each posts}}
+    <li>
+      <span class="post-title">{{this.title}}</span>
+      <span class="post-actions">
+        <a href="/posts/edit/{{this.id}}">Edit</a>
+        <form class="post-form" action="/posts/remove" method="POST">
+          <input type="hidden" name="id" value="{{this.id}}">
+          <button>Delete</button>
+        </form>
+      </span>
+    </li>
+  {{/each}}
+</ul>
+{{#if emptyPosts}}
+  <p class="desc">You haven't posted anything yet.</p>
+{{/if}}
