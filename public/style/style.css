@@ -1,0 +1,357 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* fonts */
+
+/* globals */
+::-webkit-scrollbar-thumb {
+    background-color: var(--prlp);
+    border-radius: 10px;
+  }
+    
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--bg-color);
+  }
+  
+  * {
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Poppins';
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    resize: none;
+    outline: none;
+    border: 0;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+/* globals */
+
+/* root */
+:root {
+    --bg-color: #111;
+    --text-color: #fff;
+    --prlp: #6b7cdc;
+}
+/* root */
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10%;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid var(--prlp);
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+}
+
+header nav a {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: #ffffff19;
+}
+/* header */
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10%;
+  background-color: #1e1e1e;
+  border-top: 1px solid var(--prlp);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgb(162, 162, 162);
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+}
+
+footer nav a {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer nav a:hover {
+  background-color: #ffffff19;
+}
+/* footer */
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  gap: 1.5em;
+  padding: 5vh 0;
+}
+/* main */
+
+/* form */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form fieldset {
+  width: 30vw;
+  border: 2px solid var(--prlp);
+  border-radius: 5px;
+}
+
+.form fieldset legend {
+  font-size: 0.9rem;
+}
+
+.form fieldset input, textarea {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.form button {
+  width: 30vw;
+  height: 7.5vh;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #4a66a3;
+  border-radius: 5px;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: var(--prlp);
+}
+/* form */
+
+/* other */
+.colorful {
+  color: var(--prlp);
+}
+
+.title {
+  width: 25vw;
+  padding: 2px 15px;
+  border-bottom: 3px solid var(--prlp);
+}
+
+.account-message {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.account-message a {
+  color: var(--prlp);
+  text-decoration: underline;
+}
+
+.flash {
+  padding: 15px 150px;
+  color: #d2d2d2;
+  background-color: #b4b4b427;
+  backdrop-filter: blur(25px);
+  border-radius: 5px;
+  border: 1px solid #4f4f4f;
+}
+
+.btn {
+  padding: 2vh 8vw;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #4a66a3;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--prlp);
+}
+
+.post-dash {
+  width: 90%;
+}
+
+.post-dash li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 15vh;
+  width: 100%;
+  padding: 3vh 0;
+  border-bottom: 1px solid var(--prlp);
+}
+
+.post-dash li .post-title {
+  width: 70%;
+  word-wrap: break-word;
+}
+
+.post-dash li .post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+.post-dash li .post-actions a, .post-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.post-dash li .post-actions a:hover, .post-form:hover {
+  background-color: #ffffff19;
+  cursor: pointer;
+}
+
+.post-dash li .post-actions a:hover {
+  color: var(--prlp);
+}
+
+.post-dash li .post-actions .post-form:hover button {
+  color: rgb(236, 60, 60);
+}
+
+.post-dash li .post-actions .post-form button {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.post-home {
+  width: 90%;
+}
+
+.post-home li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 15vh;
+  width: 100%;
+  padding: 3vh 0;
+  border-bottom: 1px solid var(--prlp);
+}
+
+.post-home li .home-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  word-wrap: break-word;
+  width: 95%;
+}
+
+.post-home li .home-row p span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.post-home li .home-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 90%;
+  gap: 1em;
+}
+
+.post-home li .home-row p {
+  font-size: 0.8rem;
+  color: rgb(162, 162, 162);
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: rgb(162, 162, 162);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 38%;
+}
+
+.row form button {
+  padding: 1vh 1vw;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.row form button:hover {
+  background-color: #ffffff19;
+  cursor: pointer;
+  color: var(--prlp);
+}
+
+.row form button:hover i {
+  color: var(--prlp);
+}
+
+.row a {
+  color: var(--prlp);
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+/* other */
