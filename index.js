@@ -1,4 +1,4 @@
-const port = 3000;
+const port = 5432;
 const conn = require('./db/conn');
 
 const express = require('express');
