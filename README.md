@@ -13,7 +13,7 @@
 
 # 🎥 SE7EN Showcase
 
-[Youtube video](https://www.youtube.com/watch?v=qrTMcbakf6M)
+Unavailable
 
 # 📜 Usage tutorial
 1. Install Node.js, XAMPP and MySQL Workbench
